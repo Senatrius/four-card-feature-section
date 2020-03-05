@@ -18,18 +18,19 @@ body {
 
 .container {
   margin: 4rem auto;
-  width: 95%;
-  max-width: 1150px;
+  width: 90%;
+  max-width: 1280px;
 }
 
 .cta {
-  width: 512px;
+  max-width: 50%;
   margin: 0 auto;
   text-align: center;
+  padding: 0 25px;
 }
 
 .cta .title {
-  font-size: 2.4rem;
+  font-size: calc(1.5rem + 1vw);
   font-weight: 200;
 }
 
@@ -45,7 +46,6 @@ body {
 .card-container {
   width: 100%;
   margin: 3.5rem auto 0 auto;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +89,8 @@ body {
   padding: 2rem;
   border-radius: .25rem;
   background: white;
-  -webkit-box-shadow: 0rem 0.75rem 1.5rem rgba(200, 215, 230, 0.65);
-          box-shadow: 0rem 0.75rem 1.5rem rgba(200, 215, 230, 0.65);
+  -webkit-box-shadow: 0rem 0.75rem 1.5rem rgba(200, 215, 230, 0.7);
+          box-shadow: 0rem 0.75rem 1.5rem rgba(200, 215, 230, 0.7);
 }
 
 .card-container .card__title {
@@ -103,9 +103,6 @@ body {
   color: #a3a5ae;
   font-size: .9rem;
   line-height: 1.8;
-}
-
-.card-container .card__text {
   margin-bottom: 2.5rem;
 }
 
@@ -128,5 +125,27 @@ body {
 
 .card-container .card--orange {
   border-top: 4px solid #fcaf4a;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta {
+    max-width: 100%;
+    padding: 0;
+  }
+  .title {
+    font-size: calc(1rem + 2.5vw) !important;
+  }
+  .card-col {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
