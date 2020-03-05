@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="resources/favicon-32x32.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Four Cards Section | Frontend Mentor</title>
-</head>
-<body>
-  <div class="container">
-    <div class="cta">
-      <h1 class="title">Reliable, efficient delivery</h1>
-      <h1 class="title--bold">Powered by Technology</h1>
-      <p class="desc">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-    </div>
-    <div class="card-container">
-      <div class="card--red">
-        <div class="card__title">Team Builder</div>
-        <div class="card__desc">Scans our talent network to create the optimal team for your project</div>
-        <div class="card__icon"></div>
-      </div>
-      <div class="card--cyan">
-        <div class="card__title">Supervisor</div>
-        <div class="card__desc">Monitors activity to identify project roadblocks</div>
-        <div class="card__icon"></div>
-      </div>
-      <div class="card--blue">
-        <div class="card__title">Calculator</div>
-        <div class="card__desc">Uses data from past projects to provide better delivery estimates</div>
-        <div class="card__icon"></div>
-      </div>
-      <div class="card--orange">
-        <div class="card__title">Karma</div>
-        <div class="card__desc">Regularly evaluates our talent to ensure quality</div>
-        <div class="card__icon"></div>
-      </div>
-    </div>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="resources/favicon-32x32.png" type="image/png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Four Cards Section | Frontend Mentor</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cta">
+				<h1 class="title">Reliable, efficient delivery</h1>
+				<h1 class="title title--bold">Powered by Technology</h1>
+				<p class="desc">
+					Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+				</p>
+			</div>
+			<div class="card-container">
+				<div class="card-col">
+					<div class="card card--cyan">
+						<div class="card__text">
+							<div class="card__title">Supervisor</div>
+							<div class="card__desc">
+								Monitors activity to identify project roadblocks
+							</div>
+						</div>
+						<div class="card__icon">
+							<img src="resources/icon-supervisor.svg" alt="Supervisor" />
+						</div>
+					</div>
+				</div>
+				<div class="card-col oops-two-cards">
+					<div class="card card--red">
+						<div class="card-text">
+							<div class="card__title">Team Builder</div>
+							<div class="card__desc">
+								Scans our talent network to create the optimal team for your project
+							</div>
+						</div>
+						<div class="card__icon">
+							<img src="resources/icon-team-builder.svg" alt="Team Builder" />
+						</div>
+					</div>
+					<div class="card card--orange">
+						<div class="card__text">
+							<div class="card__title">Karma</div>
+							<div class="card__desc">
+								Regularly evaluates our talent to ensure quality
+							</div>
+						</div>
+						<div class="card__icon">
+							<img src="resources/icon-karma.svg" alt="Karma" />
+						</div>
+					</div>
+				</div>
+				<div class="card-col">
+					<div class="card card--blue">
+						<div class="card__text">
+							<div class="card__title">Calculator</div>
+							<div class="card__desc">
+								Uses data from past projects to provide better delivery estimates
+							</div>
+						</div>
+						<div class="card__icon">
+							<img src="resources/icon-calculator.svg" alt="Calculator" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

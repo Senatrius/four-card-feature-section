@@ -1,3 +1,98 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
 @import 'base';
 
+.container {
+  margin: 4rem auto;
+  width: 95%;
+  max-width: 1150px;
+}
+
+//Header styles
+
+.cta {
+  width: 512px;
+  margin: 0 auto;
+  text-align: center;
+
+  .title {
+    font-size: 2.4rem;
+    font-weight: 200;
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  .desc {
+    margin-top: 1rem;
+    color: $grayish-blue;
+  }
+}
+
+//Card styles
+
+.card-container {
+  width: 100%;
+  margin: 3.5rem auto 0 auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .card-col {
+    flex: 1 0 0;
+  }
+
+  .oops-two-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: .25rem;
+    background: white;
+    box-shadow: 0rem .75rem 1.5rem rgba(200, 215, 230, .65);
+
+    &__title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+    }
+
+    &__desc {
+      color: $grayish-blue;
+      font-size: .9rem;
+      line-height: 1.8;
+    }
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+
+    &__icon {
+      align-self: flex-end;
+    }
+
+    &--red {
+      border-top: 4px solid $primary-red;
+    }
+
+    &--cyan {
+      border-top: 4px solid $primary-cyan;
+    }
+
+    &--blue {
+      border-top: 4px solid $primary-blue;
+    }
+
+    &--orange {
+      border-top: 4px solid $primary-orange;
+    }
+  }
+}

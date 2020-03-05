@@ -2,6 +2,9 @@ $primary-red: hsl(0, 78%, 62%);
 $primary-cyan: hsl(180, 62%, 55%);
 $primary-orange: hsl(34, 97%, 64%);
 $primary-blue: hsl(212, 86%, 64%);
+$light-gray: hsl(0, 0%, 98%);
+$grayish-blue: hsl(229, 6%, 66%);
+$dark-blue: hsl(234, 12%, 34%);
 
 :root {
   font-size: 15px;
@@ -12,4 +15,9 @@ $primary-blue: hsl(212, 86%, 64%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $dark-blue
+}
+
+body {
+  background: $light-gray;
 }
